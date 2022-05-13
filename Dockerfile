@@ -13,4 +13,4 @@ ARG JAR_FILE=target/spring-os-0.0.1-SNAPSHOT.jar
 ADD ${JAR_FILE} spring-os-0.0.1-SNAPSHOT.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-jar","/spring-os-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-Dspring.config.location=/app/config","-jar","/spring-os-0.0.1-SNAPSHOT.jar"]
