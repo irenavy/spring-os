@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    kubernetes:
+      config:
+        enabled: true
+        sources:
+          - namespace: aner-crt-dev
+            name: spring-os-configmap
+      reload:
+        enabled: true
+        mode: event
+        strategy: refresh
+server:
+  port: 9090    
