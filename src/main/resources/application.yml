@@ -1,0 +1,15 @@
+management:
+  endpoint:
+    restart:
+      enabled: true
+    health:
+      enabled: true
+    info:
+      enabled: true
+    env:
+      enabled: true
+      
+greeting:
+  message: Welcome Aneri
+greetingtwo:
+  message: Welcome Aneri
