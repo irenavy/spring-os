@@ -12,3 +12,14 @@ spring:
         strategy: refresh
 server:
   port: 9090    
+
+management:
+  endpoint:
+    restart:
+      enabled: true
+    health:
+      enabled: true
+    info:
+      enabled: true
+    env:
+      enabled: true
