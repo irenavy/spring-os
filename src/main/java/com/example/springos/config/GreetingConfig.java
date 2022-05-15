@@ -2,6 +2,7 @@ package com.example.springos.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+@Configuration
 @ConfigurationProperties(prefix="greetingtwo")
 public class GreetingConfig {
 	private String message;
