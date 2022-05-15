@@ -13,7 +13,7 @@ public class GreetingTwoController {
 	@Autowired
 	private GreetingConfig greetingConfig;
 	
-	@GetMapping("/greeting")
+	@GetMapping("/greeting-two")
 	public String greeting(@RequestParam(value = "name", defaultValue = "Hello World") String name) {
 		System.out.println("Greet with message from ConfigurationProperties");
     return greetingConfig.getMessage();
