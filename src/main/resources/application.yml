@@ -2,3 +2,4 @@ greeting:
   message: Welcome Aneri 1
 greetingtwo:
   message: Welcome Aneri 2
+debug: true
