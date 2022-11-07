@@ -15,7 +15,7 @@ public class GreetingTwoController {
 	
 	@GetMapping("/greeting-two")
 	public String greeting(@RequestParam(value = "name", defaultValue = "Hello World") String name) {
-		System.out.println("Greet with message from ConfigurationProperties");
+		System.out.println("Greet with message from ConfigurationProperties.....................");
     return greetingConfig.getMessage();
 	}
 
